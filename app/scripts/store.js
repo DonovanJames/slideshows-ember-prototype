@@ -1,0 +1,1 @@
+Slideshow.ApplicationAdapter = DS.FixtureAdapter;

@@ -1,0 +1,23 @@
+<h1>{{model.title}}</h1>
+<img width="100%" {{bind-attr src=model.url}}>
+
+
+<table>
+    {{#each model.attributes}}
+        <tr>
+            <td>
+                <strong>{{this.key}}:</strong>
+            </td>
+            <td>
+                {{this.value}}
+
+            </td>
+        </tr>
+    {{/each}}
+</table>
+
+{{log model.attributes}}
+
+{{#link-to 'slide.edit' model}}Change{{/link-to}}
+
+{{outlet}}
